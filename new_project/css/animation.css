@@ -1,0 +1,48 @@
+@keyframes "scale_image" {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes "scale_icons" {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.movie_image img:hover {
+  animation: scale_image 0.1s linear;
+  animation-fill-mode: forwards;
+  opacity: 0.8;
+}
+.soon_movie_image img:hover {
+  animation: scale_image 0.1s linear;
+  animation-fill-mode: forwards;
+  opacity: 0.8;
+}
+.new_movie_image img:hover {
+  animation: scale_image 0.1s linear;
+  animation-fill-mode: forwards;
+  opacity: 0.8;
+}
+.search_button a:active {
+  transition: 0.1s all;
+  transform: translate(0, 0.3vw);
+  border-bottom: 0px;
+}
+.social_icons a img:hover {
+  animation: translate_icons 2s linear;
+  animation: scale_icons 0.1s linear;
+  animation-fill-mode: forwards;
+  opacity: 0.8;
+}
